@@ -247,9 +247,9 @@ define([
         };
 
         actions.process_selected.name = Jupyter.keyboard_manager.actions.register(
-            actions.process_selected, 'process_selected_cells', that.mod_name);
+            actions.process_selected, 'black_it', that.mod_name);
         actions.process_all.name = Jupyter.keyboard_manager.actions.register(
-            actions.process_all, 'process_all_cells', that.mod_name);
+            actions.process_all, 'black_all', that.mod_name);
     };
 
     KernelExecOnCells.prototype.setup_for_new_kernel = function() {
